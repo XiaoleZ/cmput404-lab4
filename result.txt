@@ -1,0 +1,18 @@
+1. https://github.com/XiaoleZ/cmput404-lab4.git
+2. (The default page) The page shows the django install successfully
+3. /: YOu got 404, page not found
+   /polls: "Hello, world. You're at the poll index."
+4. Migrations are the way of propagating changes to the models into the database.
+  you have changed the models and you want to tell Django that you have changed the models.
+5. default site Administration page.  
+register model, such as:
+from .models import Choice, Question
+admin.site.register(Choice)
+admin.site.register(Question)
+6. 
+"You're looking at question 83."
+"You're looing at the results of question 83"
+"You're voting on question 83."
+You got 404. page not found. change the "int" to "str" then you are able to see the string now.
+7.when we have multiple template, we need change manually one by one. we want it to change automatically.
+8. use generic view to reduce the redundancy. if you don't want to display something/render anything, you don't have to use the generic view.
